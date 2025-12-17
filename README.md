@@ -94,6 +94,17 @@ http://localhost/project-folder-name
 The application uses **Chart.js** to display a bar chart showing the **total quantity of products per category**. The chart automatically updates when products are added, edited, deleted, or imported via CSV.
 
 ---
+## Screenshots
+
+### Dashboard View
+![Dashboard](screenshots/dashboard.PNG)
+
+### sql
+![Table](screenshots/phpmyadmin.PNG)
+
+
+
+---
 
 ## Author
 
