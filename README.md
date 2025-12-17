@@ -8,7 +8,6 @@ This project is a web-based Product Management Dashboard built using **PHP, MySQ
 
 * Add, edit, and delete products
 * Bulk import using CSV
-* Quantity-based inventory management
 * Category-wise bar chart (Chart.js)
 * Dynamic updates after CRUD and import
 * Pagination for improved usability
@@ -56,7 +55,7 @@ This will create the required database table.
 
 ## CSV Import
 
-A sample CSV file is provided for testing purposes:
+A sample CSV file is provided for testing purposes(You can edit ensure follow same format):
 
 ```
 uploads/test.csv
