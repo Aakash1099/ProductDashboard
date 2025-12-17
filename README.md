@@ -1,17 +1,17 @@
 ## Product Management Dashboard (PHP & MySQL)
 
-This project is a web-based Product Management Dashboard developed using **PHP, MySQL (PDO), Bootstrap, and Chart.js**. It allows users to perform CRUD operations on products, import bulk data using CSV files, manage product quantities, and visualize category-wise inventory distribution through a dynamic bar chart. Pagination is implemented to improve usability by preventing long scrolling, and all visualizations update automatically after data changes.
+This project is a web-based Product Management Dashboard built using **PHP, MySQL (PDO), Bootstrap, and Chart.js**. It supports complete CRUD operations, bulk product import using CSV files, quantity-based inventory tracking, pagination to prevent scrolling, and dynamic category-wise data visualization through a bar chart.
 
 ---
 
 ## Features
 
 * Add, edit, and delete products
-* Bulk product import using CSV
+* Bulk import using CSV
 * Quantity-based inventory management
-* Category-wise bar chart using Chart.js
-* Automatic chart updates after CRUD and import
-* Pagination for better data viewing
+* Category-wise bar chart (Chart.js)
+* Dynamic updates after CRUD and import
+* Pagination for improved usability
 * Secure database access using PDO
 
 ---
@@ -28,7 +28,8 @@ assignment/
 │   └── chart_data.php
 │
 ├── uploads/
-│   └── products.sql      # Database SQL file
+│   ├── products.sql     # Database schema file
+│   └── test.csv         # Sample CSV for import testing
 │
 ├── index.php
 ├── import.php
@@ -49,11 +50,19 @@ assignment/
 uploads/products.sql
 ```
 
-This will automatically create the required `products` table.
+This will create the required database table.
 
 ---
 
-## CSV Import Format
+## CSV Import
+
+A sample CSV file is provided for testing purposes:
+
+```
+uploads/test.csv
+```
+
+### CSV format:
 
 ```csv
 name,price,category,quantity
@@ -62,18 +71,17 @@ Office Chair,3500,Office,30
 Pen,10,Stationery,500
 ```
 
-* First row must be a header
-* Column order must be maintained
+Upload this file from the dashboard to quickly populate the database.
 
 ---
 
 ## Installation Steps
 
 * Install **XAMPP** and start **Apache** and **MySQL**
-* Place the project folder inside `htdocs`
+* Copy the project folder into `htdocs`
 * Import the SQL file from the `uploads` folder
 * Update database credentials in `config/db.php`
-* Open the application in the browser:
+* Open the application in a browser:
 
 ```
 http://localhost/project-folder-name
@@ -83,7 +91,7 @@ http://localhost/project-folder-name
 
 ## Data Visualization
 
-The dashboard includes a bar chart created using **Chart.js** that displays the **total quantity of products per category**. The chart dynamically updates whenever products are added, edited, deleted, or imported via CSV.
+The application uses **Chart.js** to display a bar chart showing the **total quantity of products per category**. The chart automatically updates when products are added, edited, deleted, or imported via CSV.
 
 ---
 
@@ -92,8 +100,6 @@ The dashboard includes a bar chart created using **Chart.js** that displays the 
 **Aakash Girhe**
 📧 [aakashgirhe289@gmail.com](mailto:aakashgirhe289@gmail.com)
 
-* Create a **short GitHub README**
-* Add **badges (PHP, MySQL, Chart.js)**
-* Write a **project description for resume**
+---
 
-Just tell me 👍
+
